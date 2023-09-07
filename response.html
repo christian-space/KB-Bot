@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bot Response</title>
+</head>
+<body>
+    <h1>Bot Response:</h1>
+    <p>You searched for: "{{ user_input }}"</p>
+    <ul>
+        {% for article in articles %}
+        <li>{{ article }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
